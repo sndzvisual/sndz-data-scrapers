@@ -5,21 +5,21 @@ Open any of them, press **Try for free**, and download the results as Excel, CSV
 
 | Tool | What you get | Price |
 |---|---|---|
-| [BORME Scraper](https://apify.com/sndzcc/borme-spain-companies) | Every new company registered in Spain, daily | $0.003 per company record |
-| [App Store & Google Play Reviews Scraper](https://apify.com/sndzcc/app-reviews-scraper) | App Store and Google Play reviews in one run | $0.00025 per review |
-| [Job Scraper](https://apify.com/sndzcc/ats-jobs-scraper) | All open jobs from Greenhouse, Lever, Ashby and more | $0.001 per job |
-| [Google News Scraper](https://apify.com/sndzcc/google-news-scraper) | News by keyword or topic, with real article URLs | $0.002 per article |
-| [Email & Contact Scraper](https://apify.com/sndzcc/contact-details-scraper) | Emails, phones and social profiles from any website | $0.002 per website with contacts |
-| [Telegram Scraper](https://apify.com/sndzcc/telegram-channel-scraper) | Posts, views and media from public Telegram channels | $0.001 per post |
-| [Brand Monitoring](https://apify.com/sndzcc/brand-mentions-radar) | Brand mentions across 9 sources, with sentiment | $0.003 per mention |
-| [AI Image Upscaler](https://apify.com/sndzcc/ai-image-upscaler) | Upscale and enhance photos 4x with AI | $0.01 per upscaled image |
-| [Keyword Research Tool](https://apify.com/sndzcc/keyword-ideas-machine) | Hundreds of keyword ideas from 5 search engines | $0.001 per keyword idea |
-| [Tech Stack Detector](https://apify.com/sndzcc/tech-stack-detector) | The technologies behind any website, in bulk | $0.002 per website analyzed |
-| [Polymarket & Kalshi Scraper](https://apify.com/sndzcc/prediction-markets-scraper) | Live odds from Polymarket and Kalshi in one dataset | $0.002 per market |
-| [WHOIS & Domain Lookup](https://apify.com/sndzcc/domain-intel) | WHOIS, availability, DNS and SSL for any list of domains | $0.002 per domain |
-| [Bluesky Scraper](https://apify.com/sndzcc/bluesky-scraper) | Posts, profiles and followers from Bluesky, no login | $0.001 per result |
-| [SEO Audit Tool](https://apify.com/sndzcc/seo-audit) | SEO audit and broken link checker for any website | $0.002 per page audited |
-| [OCR](https://apify.com/sndzcc/image-pdf-to-text) | Text from images and scanned PDFs, 100+ languages | $0.004 per page |
+| [BORME Scraper API](https://apify.com/sndzcc/borme-spain-companies) | Every new company registered in Spain, daily | $0.003 per company record |
+| [App Store & Google Play Reviews Scraper API](https://apify.com/sndzcc/app-reviews-scraper) | App Store and Google Play reviews in one run | $0.00025 per review |
+| [Job Scraper API](https://apify.com/sndzcc/ats-jobs-scraper) | All open jobs from Greenhouse, Lever, Ashby and more | $0.001 per job |
+| [Google News Scraper API](https://apify.com/sndzcc/google-news-scraper) | News by keyword or topic, with real article URLs | $0.0015 per article |
+| [Email & Contact Scraper API](https://apify.com/sndzcc/contact-details-scraper) | Emails, phones and social profiles from any website | $0.0015 per website with contacts |
+| [Telegram Scraper API](https://apify.com/sndzcc/telegram-channel-scraper) | Posts, views and media from public Telegram channels | $0.0007 per post |
+| [Brand Monitoring API](https://apify.com/sndzcc/brand-mentions-radar) | Brand mentions across 9 sources, with sentiment | $0.003 per mention |
+| [AI Image Upscaler API](https://apify.com/sndzcc/ai-image-upscaler) | Upscale and enhance photos 4x with AI | $0.01 per upscaled image |
+| [Keyword Research API](https://apify.com/sndzcc/keyword-ideas-machine) | Hundreds of keyword ideas from 5 search engines | $0.001 per keyword idea |
+| [Tech Stack Detector API](https://apify.com/sndzcc/tech-stack-detector) | The technologies behind any website, in bulk | $0.0015 per website analyzed |
+| [Polymarket & Kalshi API](https://apify.com/sndzcc/prediction-markets-scraper) | Live odds from Polymarket and Kalshi in one dataset | $0.002 per market |
+| [WHOIS & Domain Lookup API](https://apify.com/sndzcc/domain-intel) | WHOIS, availability, DNS and SSL for any list of domains | $0.0015 per domain |
+| [Bluesky Scraper API](https://apify.com/sndzcc/bluesky-scraper) | Posts, profiles and followers from Bluesky, no login | $0.001 per result |
+| [SEO Audit API](https://apify.com/sndzcc/seo-audit) | SEO audit and broken link checker for any website | $0.002 per page audited |
+| [OCR API](https://apify.com/sndzcc/image-pdf-to-text) | Text from images and scanned PDFs, 100+ languages | $0.004 per page |
 
 ## How to use them
 
@@ -31,7 +31,7 @@ From code: get your token in Apify Console (Settings > API & Integrations) and u
 
 ## Tools
 
-### BORME Scraper - Spain New Company Leads Daily
+### BORME Scraper API - Spain New Company Leads Daily
 
 Scrape BORME, Spain's official company registry gazette: every new company registered in Spain each day with name, address, activity, capital and directors. Fresh Spanish B2B leads.
 
@@ -51,7 +51,7 @@ for item in client.dataset(run["defaultDatasetId"]).iterate_items():
 - **Can I get only new companies in my province or sector?** Yes. Filter by act type (Constitución = new company), province and keywords in the company name or business purpose.
 - **Can I get it every day automatically?** Yes. Create an Apify Schedule with "Last N editions" = 1 and send the results to Google Sheets, Slack or your CRM.
 
-### App Store & Google Play Reviews Scraper
+### App Store & Google Play Reviews Scraper API
 
 Scrape app reviews from the Apple App Store and Google Play in one run, for any app and country: rating, review text, version, date and developer replies. Export to CSV, Excel or JSON.
 
@@ -71,7 +71,7 @@ for item in client.dataset(run["defaultDatasetId"]).iterate_items():
 - **How many App Store reviews can I get?** Apple's public feed gives the latest 500 reviews per country. Add more countries to get more. Google Play has no fixed limit.
 - **Can I get only negative reviews?** Yes. Select star ratings 1 and 2, and you only pay for those.
 
-### Job Scraper - Greenhouse, Lever, Ashby & Workable Jobs
+### Job Scraper API - Greenhouse, Lever, Ashby & Workable
 
 Scrape every open job of any company from Greenhouse, Lever, Ashby, Workable, SmartRecruiters and Recruitee job boards. Just type company names: title, location, salary, remote, description and URL.
 
@@ -91,12 +91,12 @@ for item in client.dataset(run["defaultDatasetId"]).iterate_items():
 - **Do I need to know which ATS a company uses?** No. Type the company name (for example stripe) and every supported ATS is checked.
 - **Does it include salaries?** Yes, when the company publishes them (common on Ashby, Lever and Recruitee).
 
-### Google News Scraper - Articles with Real URLs
+### Google News Scraper API - Articles with Real URLs
 
 Scrape Google News by keyword, topic or site, in any country and language: headline, source, date and the real article URL, not the news.google.com redirect. For news monitoring and AI.
 
 - Run it in the browser: **[https://apify.com/sndzcc/google-news-scraper](https://apify.com/sndzcc/google-news-scraper)** (free Apify plan available, no credit card)
-- Price: **$0.002 per article**, no monthly fee
+- Price: **$0.0015 per article**, no monthly fee
 
 ```python
 from apify_client import ApifyClient  # pip install apify-client
@@ -111,12 +111,12 @@ for item in client.dataset(run["defaultDatasetId"]).iterate_items():
 - **Can I use search operators?** Yes: "exact phrase", site:reuters.com, -exclude and OR work like on Google News.
 - **How many articles per search?** Google News returns up to 100 per search or topic. Split broad searches by site or time range to get more.
 
-### Email & Contact Scraper - Emails, Phones & Socials
+### Email & Contact Scraper API - Emails, Phones & Socials
 
 Email scraper and contact finder: extract emails, phone numbers, WhatsApp, LinkedIn, Instagram and other social links from any list of company websites, in bulk. Pay only for sites with contacts.
 
 - Run it in the browser: **[https://apify.com/sndzcc/contact-details-scraper](https://apify.com/sndzcc/contact-details-scraper)** (free Apify plan available, no credit card)
-- Price: **$0.002 per website with contacts**, no monthly fee
+- Price: **$0.0015 per website with contacts**, no monthly fee
 
 ```python
 from apify_client import ApifyClient  # pip install apify-client
@@ -131,12 +131,12 @@ for item in client.dataset(run["defaultDatasetId"]).iterate_items():
 - **Do I pay for websites without contacts?** No. Only websites where contacts are found are saved and billed.
 - **Where do I get the list of websites?** From Google Maps, directories, trade fairs or your CRM. Our BORME Scraper gives you new Spanish companies every day.
 
-### Telegram Scraper - Channel Posts, Views & Media
+### Telegram Scraper API - Channel Posts, Views & Media
 
 Telegram channel scraper with no login, phone or API key: scrape messages from any public Telegram channel with text, date, views, reactions, links, photos and videos, plus channel stats.
 
 - Run it in the browser: **[https://apify.com/sndzcc/telegram-channel-scraper](https://apify.com/sndzcc/telegram-channel-scraper)** (free Apify plan available, no credit card)
-- Price: **$0.001 per post**, no monthly fee
+- Price: **$0.0007 per post**, no monthly fee
 
 ```python
 from apify_client import ApifyClient  # pip install apify-client
@@ -151,7 +151,7 @@ for item in client.dataset(run["defaultDatasetId"]).iterate_items():
 - **Can I scrape private channels or groups?** No. Only public channels with a web preview (t.me/s/name) can be read.
 - **Can I get only recent posts or posts with a keyword?** Yes. Use "Posted since" and "Keywords", and you only pay for the posts you keep.
 
-### Brand Monitoring - Mentions Radar for News, Reddit & HN
+### Brand Monitoring API - Mentions Radar for News & Reddit
 
 Brand monitoring and social listening tool: track every mention of your brand, product or competitor across Google News, Reddit, Hacker News, Bluesky, Mastodon, YouTube, Stack Overflow, GitHub and Lemmy. With sentiment.
 
@@ -171,7 +171,7 @@ for item in client.dataset(run["defaultDatasetId"]).iterate_items():
 - **Can I get alerts only for new mentions?** Yes. Turn on "Only new mentions" and schedule it daily: mentions you already have are skipped and free.
 - **Is it a cheaper alternative to Mention, Brand24 or Awario?** Yes for most small brands: there is no monthly subscription, you pay only per mention found.
 
-### AI Image Upscaler - Upscale & Enhance Photos 4x
+### AI Image Upscaler API - Upscale & Enhance Photos 4x
 
 Upscale and enhance any image 2x or 4x with Real-ESRGAN AI, in bulk. Increase resolution and sharpen small, blurry or compressed photos. A pay-per-image Topaz, Upscayl and Let's Enhance alternative.
 
@@ -191,7 +191,7 @@ for item in client.dataset(run["defaultDatasetId"]).iterate_items():
 - **Is it real AI upscaling?** Yes. It uses Real-ESRGAN, the open-source model behind popular desktop upscalers, which rebuilds edges and textures.
 - **Which formats are supported?** Input: JPG, PNG, WebP, GIF, BMP and TIFF. Output: PNG (keeps transparency), JPG or WebP.
 
-### Keyword Research Tool - Google, YouTube & Amazon Ideas
+### Keyword Research API - Google, YouTube & Amazon Ideas
 
 Keyword research tool: turn one keyword into hundreds of long-tail keyword ideas from Google, YouTube, Amazon, Bing and DuckDuckGo autocomplete, in any country and language. With intent and score.
 
@@ -211,12 +211,12 @@ for item in client.dataset(run["defaultDatasetId"]).iterate_items():
 - **Does it give search volume?** It gives a popularity score based on how often and how high each engine suggests the idea, not exact monthly volumes.
 - **Does it work for Amazon and YouTube keywords?** Yes. Amazon uses each country's own store, and YouTube shows video searches.
 
-### Tech Stack Detector - Wappalyzer & BuiltWith Alternative
+### Tech Stack Detector API - Wappalyzer & BuiltWith Alternative
 
 Find the technologies behind any website in bulk: CMS, ecommerce platform, analytics, ad pixels, marketing tools, live chat, payments, hosting and email provider. A Wappalyzer and BuiltWith alternative.
 
 - Run it in the browser: **[https://apify.com/sndzcc/tech-stack-detector](https://apify.com/sndzcc/tech-stack-detector)** (free Apify plan available, no credit card)
-- Price: **$0.002 per website analyzed**, no monthly fee
+- Price: **$0.0015 per website analyzed**, no monthly fee
 
 ```python
 from apify_client import ApifyClient  # pip install apify-client
@@ -231,7 +231,7 @@ for item in client.dataset(run["defaultDatasetId"]).iterate_items():
 - **Can I find only websites that use a specific technology?** Yes. Fill in "Only websites using" (for example Shopify or Klaviyo) and you only pay for the websites that match.
 - **How does it find the email provider?** From the domain's public MX and SPF records: Google Workspace, Microsoft 365, Zoho, SendGrid, Mailchimp, Salesforce and more.
 
-### Polymarket & Kalshi Scraper - Prediction Market Odds
+### Polymarket & Kalshi API - Prediction Market Odds
 
 Live odds, probabilities, 24h moves and volume of every Polymarket and Kalshi prediction market in one dataset. Search by keyword or category, or get only the biggest moves of the day.
 
@@ -251,12 +251,12 @@ for item in client.dataset(run["defaultDatasetId"]).iterate_items():
 - **Can I compare the same event on both platforms?** Yes. Search a keyword (for example fed or bitcoin) and both platforms come out in the same format, side by side.
 - **Can I get alerts when odds move a lot?** Yes. Set "Min 24h move" (for example 10 points) and schedule it hourly or daily.
 
-### WHOIS & Domain Lookup - DNS, SSL & Availability
+### WHOIS & Domain Lookup API - DNS, SSL & Availability
 
 Bulk WHOIS and domain lookup: availability, registrar, creation and expiry dates, nameservers, DNS records, email provider, SPF, DMARC and SSL certificate of any list of domains.
 
 - Run it in the browser: **[https://apify.com/sndzcc/domain-intel](https://apify.com/sndzcc/domain-intel)** (free Apify plan available, no credit card)
-- Price: **$0.002 per domain**, no monthly fee
+- Price: **$0.0015 per domain**, no monthly fee
 
 ```python
 from apify_client import ApifyClient  # pip install apify-client
@@ -271,7 +271,7 @@ for item in client.dataset(run["defaultDatasetId"]).iterate_items():
 - **Can I check if domains are available?** Yes. Each row says whether the domain is available, and "Only available domains" keeps (and bills) just the free ones.
 - **Does it show the owner of a domain?** Only when the registry publishes it. Since GDPR most registries hide owner names and emails; registrar, dates and nameservers are always public.
 
-### Bluesky Scraper - Posts, Profiles & Followers
+### Bluesky Scraper API - Posts, Profiles & Followers
 
 Scrape Bluesky without login: posts by keyword or hashtag, profiles with follower counts, every post of a profile, followers and following, and account search to find influencers.
 
@@ -291,7 +291,7 @@ for item in client.dataset(run["defaultDatasetId"]).iterate_items():
 - **How many posts does a search return?** Up to 100 per term and run, which is what Bluesky serves without login. Profiles, timelines and followers have no limit.
 - **Can I find influencers in my niche?** Yes. Use "Search accounts" with a topic and you get matching accounts with follower counts, bios and websites.
 
-### SEO Audit Tool - Broken Links, Meta Tags & Site Crawler
+### SEO Audit API - Broken Links, Meta Tags & Site Crawler
 
 Crawl any website and audit every page: SEO score, issues to fix, broken links, redirects, titles, meta descriptions, headings, images without alt, structured data, sitemap and robots.txt.
 
@@ -311,7 +311,7 @@ for item in client.dataset(run["defaultDatasetId"]).iterate_items():
 - **Is it a broken link checker too?** Yes. It tests internal and external links and lists the broken ones on each page, ignoring links that only block bots.
 - **How is the score calculated?** Each page starts at 100 and loses 15 points per error, 5 per warning and 1 per notice.
 
-### OCR - Image & PDF to Text Extractor, 100+ Languages
+### OCR API - Image & PDF to Text Extractor, 100+ Languages
 
 OCR tool to extract text from images, screenshots, photos and scanned or digital PDFs in 100+ languages, in bulk. Image to text and PDF to text with clean output per page. No API key.
 
