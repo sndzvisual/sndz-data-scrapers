@@ -1,6 +1,6 @@
 # Sndz Data: web scrapers and data tools
 
-15 ready-to-use data tools that run in the cloud on [Apify](https://apify.com/sndzcc): no servers, no proxies, no code needed.
+16 ready-to-use data tools that run in the cloud on [Apify](https://apify.com/sndzcc): no servers, no proxies, no code needed.
 Open any of them, press **Try for free**, and download the results as Excel, CSV or JSON, or call them from your code with the examples in this repo.
 
 | Tool | What you get | Price |
@@ -20,6 +20,7 @@ Open any of them, press **Try for free**, and download the results as Excel, CSV
 | [Bluesky Scraper API](https://apify.com/sndzcc/bluesky-scraper) | Posts, profiles and followers from Bluesky, no login | $0.001 per result |
 | [SEO Audit API](https://apify.com/sndzcc/seo-audit) | SEO audit and broken link checker for any website | $0.002 per page audited |
 | [OCR API](https://apify.com/sndzcc/image-pdf-to-text) | Text from images and scanned PDFs, 100+ languages | $0.004 per page |
+| [Speech to Text API](https://apify.com/sndzcc/speech-to-text) | Audio, video and podcasts to text and subtitles with Whisper AI | $0.005 per audio minute |
 
 ## How to use them
 
@@ -37,7 +38,6 @@ Scrape BORME, Spain's official company registry gazette: every new company regis
 
 - Run it in the browser: **[https://apify.com/sndzcc/borme-spain-companies](https://apify.com/sndzcc/borme-spain-companies)** (free Apify plan available, no credit card)
 - Price: **$0.003 per company record**, no monthly fee
-
 ```python
 from apify_client import ApifyClient  # pip install apify-client
 
@@ -57,7 +57,6 @@ Scrape app reviews from the Apple App Store and Google Play in one run, for any 
 
 - Run it in the browser: **[https://apify.com/sndzcc/app-reviews-scraper](https://apify.com/sndzcc/app-reviews-scraper)** (free Apify plan available, no credit card)
 - Price: **$0.00025 per review**, no monthly fee
-
 ```python
 from apify_client import ApifyClient  # pip install apify-client
 
@@ -77,7 +76,6 @@ Scrape every open job of any company from Greenhouse, Lever, Ashby, Workable, Sm
 
 - Run it in the browser: **[https://apify.com/sndzcc/ats-jobs-scraper](https://apify.com/sndzcc/ats-jobs-scraper)** (free Apify plan available, no credit card)
 - Price: **$0.001 per job**, no monthly fee
-
 ```python
 from apify_client import ApifyClient  # pip install apify-client
 
@@ -97,7 +95,6 @@ Scrape Google News by keyword, topic or site, in any country and language: headl
 
 - Run it in the browser: **[https://apify.com/sndzcc/google-news-scraper](https://apify.com/sndzcc/google-news-scraper)** (free Apify plan available, no credit card)
 - Price: **$0.0015 per article**, no monthly fee
-
 ```python
 from apify_client import ApifyClient  # pip install apify-client
 
@@ -117,7 +114,6 @@ Email scraper and contact finder: extract emails, phone numbers, WhatsApp, Linke
 
 - Run it in the browser: **[https://apify.com/sndzcc/contact-details-scraper](https://apify.com/sndzcc/contact-details-scraper)** (free Apify plan available, no credit card)
 - Price: **$0.0015 per website with contacts**, no monthly fee
-
 ```python
 from apify_client import ApifyClient  # pip install apify-client
 
@@ -137,7 +133,6 @@ Telegram channel scraper with no login, phone or API key: scrape messages from a
 
 - Run it in the browser: **[https://apify.com/sndzcc/telegram-channel-scraper](https://apify.com/sndzcc/telegram-channel-scraper)** (free Apify plan available, no credit card)
 - Price: **$0.0007 per post**, no monthly fee
-
 ```python
 from apify_client import ApifyClient  # pip install apify-client
 
@@ -157,7 +152,6 @@ Brand monitoring and social listening tool: track every mention of your brand, p
 
 - Run it in the browser: **[https://apify.com/sndzcc/brand-mentions-radar](https://apify.com/sndzcc/brand-mentions-radar)** (free Apify plan available, no credit card)
 - Price: **$0.003 per mention**, no monthly fee
-
 ```python
 from apify_client import ApifyClient  # pip install apify-client
 
@@ -177,7 +171,6 @@ Upscale and enhance any image 2x or 4x with Real-ESRGAN AI, in bulk. Increase re
 
 - Run it in the browser: **[https://apify.com/sndzcc/ai-image-upscaler](https://apify.com/sndzcc/ai-image-upscaler)** (free Apify plan available, no credit card)
 - Price: **$0.01 per upscaled image**, no monthly fee
-
 ```python
 from apify_client import ApifyClient  # pip install apify-client
 
@@ -197,7 +190,6 @@ Keyword research tool: turn one keyword into hundreds of long-tail keyword ideas
 
 - Run it in the browser: **[https://apify.com/sndzcc/keyword-ideas-machine](https://apify.com/sndzcc/keyword-ideas-machine)** (free Apify plan available, no credit card)
 - Price: **$0.001 per keyword idea**, no monthly fee
-
 ```python
 from apify_client import ApifyClient  # pip install apify-client
 
@@ -217,7 +209,6 @@ Find the technologies behind any website in bulk: CMS, ecommerce platform, analy
 
 - Run it in the browser: **[https://apify.com/sndzcc/tech-stack-detector](https://apify.com/sndzcc/tech-stack-detector)** (free Apify plan available, no credit card)
 - Price: **$0.0015 per website analyzed**, no monthly fee
-
 ```python
 from apify_client import ApifyClient  # pip install apify-client
 
@@ -237,7 +228,6 @@ Live odds, probabilities, 24h moves and volume of every Polymarket and Kalshi pr
 
 - Run it in the browser: **[https://apify.com/sndzcc/prediction-markets-scraper](https://apify.com/sndzcc/prediction-markets-scraper)** (free Apify plan available, no credit card)
 - Price: **$0.002 per market**, no monthly fee
-
 ```python
 from apify_client import ApifyClient  # pip install apify-client
 
@@ -257,7 +247,6 @@ Bulk WHOIS and domain lookup: availability, registrar, creation and expiry dates
 
 - Run it in the browser: **[https://apify.com/sndzcc/domain-intel](https://apify.com/sndzcc/domain-intel)** (free Apify plan available, no credit card)
 - Price: **$0.0015 per domain**, no monthly fee
-
 ```python
 from apify_client import ApifyClient  # pip install apify-client
 
@@ -277,7 +266,6 @@ Scrape Bluesky without login: posts by keyword or hashtag, profiles with followe
 
 - Run it in the browser: **[https://apify.com/sndzcc/bluesky-scraper](https://apify.com/sndzcc/bluesky-scraper)** (free Apify plan available, no credit card)
 - Price: **$0.001 per result**, no monthly fee
-
 ```python
 from apify_client import ApifyClient  # pip install apify-client
 
@@ -297,7 +285,6 @@ Crawl any website and audit every page: SEO score, issues to fix, broken links, 
 
 - Run it in the browser: **[https://apify.com/sndzcc/seo-audit](https://apify.com/sndzcc/seo-audit)** (free Apify plan available, no credit card)
 - Price: **$0.002 per page audited**, no monthly fee
-
 ```python
 from apify_client import ApifyClient  # pip install apify-client
 
@@ -317,7 +304,6 @@ OCR tool to extract text from images, screenshots, photos and scanned or digital
 
 - Run it in the browser: **[https://apify.com/sndzcc/image-pdf-to-text](https://apify.com/sndzcc/image-pdf-to-text)** (free Apify plan available, no credit card)
 - Price: **$0.004 per page**, no monthly fee
-
 ```python
 from apify_client import ApifyClient  # pip install apify-client
 
@@ -330,6 +316,25 @@ for item in client.dataset(run["defaultDatasetId"]).iterate_items():
 - **Which files can it read?** JPG, PNG, WebP, TIFF, BMP and GIF images, and PDFs, both digital and scanned.
 - **Which languages are supported?** More than 100, including English, Spanish, German, French, Chinese, Japanese, Arabic, Hindi and Russian. Several at once are fine.
 - **Does it read scanned PDFs?** Yes. Pages with text are read directly; scanned pages go through OCR, and upside-down pages are turned automatically.
+
+### Speech to Text API - Audio, Video & Podcast Transcription
+
+Transcribe audio, video and podcast episodes to text with Whisper AI, in 99 languages. Get clean text, timestamps and SRT/VTT subtitles, or translate to English. Pay per audio minute.
+
+- Run it in the browser: **[https://apify.com/sndzcc/speech-to-text](https://apify.com/sndzcc/speech-to-text)** (free Apify plan available, no credit card)
+- Price: **$0.005 per audio minute**, no monthly fee
+```python
+from apify_client import ApifyClient  # pip install apify-client
+
+client = ApifyClient("YOUR_APIFY_TOKEN")
+run = client.actor("sndzcc/speech-to-text").call(run_input={"urls": ["https://github.com/openai/whisper/raw/main/tests/jfk.flac", "https://feeds.npr.org/510289/podcast.xml"], "maxMinutesPerFile": 2})
+for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+    print(item)
+```
+
+- **Which files and links work?** MP3, M4A, WAV, FLAC, OGG, Opus, MP4, MOV, WebM, MKV and more, by direct link, plus podcast RSS feeds, Apple Podcasts links, Dropbox and Google Drive share links and web pages with an audio player.
+- **Does it work with YouTube, TikTok or Spotify?** No. Those sites block automated downloads. Use a direct link to the file, the podcast RSS feed or its Apple Podcasts page instead.
+- **Which languages are supported?** The 99 languages of Whisper, detected automatically, including English, Spanish, French, German, Portuguese, Italian, Chinese, Japanese, Arabic and Hindi. It can also translate any of them to English.
 
 ## Support
 
